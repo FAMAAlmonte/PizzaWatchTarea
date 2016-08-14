@@ -19,6 +19,12 @@
 		34463DBB1D52C11E007494C8 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34463DBA1D52C11E007494C8 /* InterfaceController.swift */; };
 		34463DBD1D52C11E007494C8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34463DBC1D52C11E007494C8 /* ExtensionDelegate.swift */; };
 		34463DBF1D52C11E007494C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34463DBE1D52C11E007494C8 /* Assets.xcassets */; };
+		34463DCF1D53091A007494C8 /* TipoDeMasaVistaInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34463DCE1D53091A007494C8 /* TipoDeMasaVistaInterfaceController.swift */; };
+		34463DD11D5416BE007494C8 /* IngredientesVistaInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34463DD01D5416BE007494C8 /* IngredientesVistaInterfaceController.swift */; };
+		34463DD31D541865007494C8 /* QuesoVistaInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34463DD21D541865007494C8 /* QuesoVistaInterfaceController.swift */; };
+		34463DD51D543881007494C8 /* ConfirmarVistaInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34463DD41D543881007494C8 /* ConfirmarVistaInterfaceController.swift */; };
+		34463DD71D55B8EB007494C8 /* ModificarVistaInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34463DD61D55B8EB007494C8 /* ModificarVistaInterfaceController.swift */; };
+		34463DD91D562CE0007494C8 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34463DD81D562CE0007494C8 /* Pizza.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +86,12 @@
 		34463DBC1D52C11E007494C8 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		34463DBE1D52C11E007494C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34463DC01D52C11E007494C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34463DCE1D53091A007494C8 /* TipoDeMasaVistaInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TipoDeMasaVistaInterfaceController.swift; path = "../PizzaWatchTarea WatchKit App/TipoDeMasaVistaInterfaceController.swift"; sourceTree = "<group>"; };
+		34463DD01D5416BE007494C8 /* IngredientesVistaInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IngredientesVistaInterfaceController.swift; path = "../PizzaWatchTarea WatchKit App/IngredientesVistaInterfaceController.swift"; sourceTree = "<group>"; };
+		34463DD21D541865007494C8 /* QuesoVistaInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuesoVistaInterfaceController.swift; path = "../PizzaWatchTarea WatchKit App/QuesoVistaInterfaceController.swift"; sourceTree = "<group>"; };
+		34463DD41D543881007494C8 /* ConfirmarVistaInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfirmarVistaInterfaceController.swift; path = "../PizzaWatchTarea WatchKit App/ConfirmarVistaInterfaceController.swift"; sourceTree = "<group>"; };
+		34463DD61D55B8EB007494C8 /* ModificarVistaInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModificarVistaInterfaceController.swift; path = "../PizzaWatchTarea WatchKit App/ModificarVistaInterfaceController.swift"; sourceTree = "<group>"; };
+		34463DD81D562CE0007494C8 /* Pizza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pizza.swift; path = "PizzaWatchTarea WatchKit Extension/Pizza.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,9 +158,15 @@
 		34463DB91D52C11E007494C8 /* PizzaWatchTarea WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				34463DBA1D52C11E007494C8 /* InterfaceController.swift */,
 				34463DBC1D52C11E007494C8 /* ExtensionDelegate.swift */,
+				34463DBA1D52C11E007494C8 /* InterfaceController.swift */,
+				34463DCE1D53091A007494C8 /* TipoDeMasaVistaInterfaceController.swift */,
+				34463DD21D541865007494C8 /* QuesoVistaInterfaceController.swift */,
+				34463DD01D5416BE007494C8 /* IngredientesVistaInterfaceController.swift */,
+				34463DD41D543881007494C8 /* ConfirmarVistaInterfaceController.swift */,
 				34463DBE1D52C11E007494C8 /* Assets.xcassets */,
+				34463DD61D55B8EB007494C8 /* ModificarVistaInterfaceController.swift */,
+				34463DD81D562CE0007494C8 /* Pizza.swift */,
 				34463DC01D52C11E007494C8 /* Info.plist */,
 			);
 			path = "PizzaWatchTarea WatchKit Extension";
@@ -300,6 +318,12 @@
 			files = (
 				34463DBD1D52C11E007494C8 /* ExtensionDelegate.swift in Sources */,
 				34463DBB1D52C11E007494C8 /* InterfaceController.swift in Sources */,
+				34463DD71D55B8EB007494C8 /* ModificarVistaInterfaceController.swift in Sources */,
+				34463DD31D541865007494C8 /* QuesoVistaInterfaceController.swift in Sources */,
+				34463DD91D562CE0007494C8 /* Pizza.swift in Sources */,
+				34463DD11D5416BE007494C8 /* IngredientesVistaInterfaceController.swift in Sources */,
+				34463DCF1D53091A007494C8 /* TipoDeMasaVistaInterfaceController.swift in Sources */,
+				34463DD51D543881007494C8 /* ConfirmarVistaInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +554,7 @@
 				34463DC51D52C11E007494C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34463DC71D52C11E007494C8 /* Build configuration list for PBXNativeTarget "PizzaWatchTarea WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +563,7 @@
 				34463DC91D52C11E007494C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34463DCB1D52C11E007494C8 /* Build configuration list for PBXNativeTarget "PizzaWatchTarea" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +572,7 @@
 				34463DCD1D52C11E007494C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

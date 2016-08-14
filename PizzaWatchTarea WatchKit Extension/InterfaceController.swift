@@ -12,18 +12,69 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    var tamañoSelecionado:String = "Pequeña"
+    var pickerItems:[WKPickerItem]?
+    var selección:[String] = []
+    var modificar:Bool?
+    
+    @IBOutlet var itemPickerTamaño: WKInterfacePicker!
+    
+    var listaDeTamaños: [(String, String)] = [
+        ("Pequeña", "Individual"),
+        ("Mediana", "Para Parejas"),
+        ("Grande", "Familiar") ]
+    
+   
+    
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
-    }
-
+        
+        pickerItems = listaDeTamaños.map {
+            let pickerItem = WKPickerItem()
+            pickerItem.title = $0.0
+            pickerItem.caption = $0.1
+            return pickerItem
+            
+            }
+        
+        itemPickerTamaño.setItems(pickerItems)
+        
+        }
+    
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        
+    }
+    
+    @IBAction func pickerSelectedItemChanged(value: Int) {
+        if (!selección.isEmpty) {
+            selección = selección.filter(){
+                $0 != tamañoSelecionado
+            }
+        }
+        
+        NSLog("List Picker: \(listaDeTamaños[value].0) selected")
+        tamañoSelecionado = pickerItems![value].title!
+        
     }
 
-    override func didDeactivate() {
+    
+        @IBAction func aceptarTamaño() {
+            if (!selección.isEmpty) {
+                selección = selección.filter(){
+                    $0 != tamañoSelecionado
+                }
+            }
+            selección.append(tamañoSelecionado)
+                pushControllerWithName("TipoDeMasaVista", context: selección)
+            
+        }
+
+
+        override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
